@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -101,12 +101,15 @@ find_package(catkin REQUIRED COMPONENTS
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a cpp library
 # add_library(test_nao
 #   src/${PROJECT_NAME}/test_nao.cpp
 # )
+
+message ("<<<<InfoBoost: Boost_INCLUDE_DIRS ${Boost_INCLUDE_DIRS}")
 
 ## Declare a cpp executable
 add_executable(nao_talker src/nao_talker.cpp)
