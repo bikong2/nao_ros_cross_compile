@@ -14,12 +14,12 @@ Utilized Versions
 Currently we are testing with the following setup.
 
 - NAO Robot:
- Hardware Version 5 (atom cpu)
- Operating System Naoqi 2.0.19 
- ROS Version Indigo, compiled from source following this tutorial http://wiki.ros.org/nao/Installation/compileFromVirtualNao
+-- Hardware Version 5 (atom cpu)
+--  Operating System Naoqi 2.0.19 
+--  ROS Version Indigo, compiled from source following this tutorial http://wiki.ros.org/nao/Installation/compileFromVirtualNao
 - Development PC (64bit):
- ROS Version Indigo
- Aldebaran Cross Compile Toolchain "linux64-atom-pub.zip" (available under https://community.aldebaran.com/en/resources/software)
+-- ROS Version Indigo
+-- Aldebaran Cross Compile Toolchain "linux64-atom-pub.zip" (available under https://community.aldebaran.com/en/resources/software)
 
 Setup Steps
 -----------
@@ -30,7 +30,11 @@ This part will be updated frequently, in order to reflect the development of thi
 
 2) Unzip the toolchain and place it somewere reachable (e.g. your homefolder)
 
-3) Try to compile the nao_ros_cross_compile package by calling catkin_make --pkg nao_ros_cross_compile -DCMAKE_TOOLCHAIN_FILE=<path2toolchain>/cross-config.cmake
+3) Try to compile the nao_ros_cross_compile package by calling 
+
+.. code-block:: bash
+
+	catkin_make --pkg nao_ros_cross_compile -DCMAKE_TOOLCHAIN_FILE=<path2toolchain>/cross-config.cmake
 
 4) Check whether the resulting binary is compiled for the NAO architecture, by checking its properties (e.g. try "file nao_talker" on commandline).
 
@@ -47,5 +51,6 @@ Helpfull Resources and Hints
 ----------------------------
 
 http://www.cmake.org/Wiki/CMake_Cross_Compiling#The_toolchain_file
+
 https://github.com/ros/catkin/issues/484
 
