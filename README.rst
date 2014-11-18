@@ -13,13 +13,16 @@ Utilized Versions
 
 Currently we are testing with the following setup.
 
-- NAO Robot:
--- Hardware Version 5 (atom cpu)
---  Operating System Naoqi 2.0.19 
---  ROS Version Indigo, compiled from source following this tutorial http://wiki.ros.org/nao/Installation/compileFromVirtualNao
-- Development PC (64bit):
--- ROS Version Indigo
--- Aldebaran Cross Compile Toolchain "linux64-atom-pub.zip" (available under https://community.aldebaran.com/en/resources/software)
+NAO Robot:
+
+- Hardware Version 5 (atom cpu)
+-  Operating System Naoqi 2.0.19 
+-  ROS Version Indigo, compiled from source following this tutorial http://wiki.ros.org/nao/Installation/compileFromVirtualNao
+
+Development PC (64bit):
+
+- ROS Version Indigo
+- Aldebaran Cross Compile Toolchain "linux64-atom-pub.zip" (available under https://community.aldebaran.com/en/resources/software)
 
 Setup Steps
 -----------
